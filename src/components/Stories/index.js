@@ -1,6 +1,7 @@
 import { StyleSheet, Image, ScrollView, TouchableOpacity } from "react-native";
 import Fake1 from "../../assets/fake-feminino.jpg";
 import Fake2 from "../../assets/fake-masculino.jpg";
+import Story from "../Story";
 
 export default function Stories() {
   return (
@@ -9,24 +10,12 @@ export default function Stories() {
       horizontal
       showsHorizontalScrollIndicator={false}
     >
-      <TouchableOpacity>
-        <Image style={styles.story} source={Fake1} />
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Image style={styles.story} source={Fake2} />
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Image style={styles.story} source={Fake1} />
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Image style={styles.story} source={Fake2} />
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Image style={styles.story} source={Fake1} />
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Image style={styles.story} source={Fake2} />
-      </TouchableOpacity>
+      <Story image={Fake1} />
+      <Story image={Fake2} />
+      <Story image={Fake1} />
+      <Story image={Fake2} />
+      <Story image={Fake1} />
+      <Story image={Fake2} />
     </ScrollView>
   );
 }
@@ -36,5 +25,4 @@ const styles = StyleSheet.create({
     gap: 8,
     height: 100,
   },
-  story: { width: 100, height: 100, borderRadius: 50 },
 });

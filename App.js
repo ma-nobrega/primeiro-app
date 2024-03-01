@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import Header from "./src/components/Header";
-import Stories from "./src/components/Stories";
+import Image from "./src/assets/fake-masculino.jpg";
+import InfoProfile from "./src/components/InfoProfile";
 
 export default function App() {
   return (
@@ -11,8 +11,7 @@ export default function App() {
         marginHorizontal: 16,
       }}
     >
-      <Header />
-      <Stories />
+      <InfoProfile image={Image} publi={250} followers={1230} following={5} />
     </View>
   );
 }
