@@ -1,18 +1,10 @@
-import { View } from "react-native";
-import Header from "./src/components/Header";
-import Stories from "./src/components/Stories";
+import { NavigationContainer } from "@react-navigation/native";
+import Routes from "./src/routes";
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        marginVertical: 32,
-        marginHorizontal: 16,
-      }}
-    >
-      <Header />
-      <Stories />
-    </View>
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
   );
 }
